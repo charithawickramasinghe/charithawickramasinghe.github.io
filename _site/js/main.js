@@ -10,3 +10,16 @@ window.addEventListener("scroll", () => {
         gototop.classList.remove("active");
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentUrl = window.location.pathname; // Get the current path
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentUrl) {
+            link.classList.add('active'); // Add the 'active' class
+        } else {
+            link.classList.remove('active'); // Remove the 'active' class
+        }
+    });
+});

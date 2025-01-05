@@ -23,3 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+//Contact form
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form from submitting
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name && email && message) {
+        document.getElementById('form-message').textContent = "Thank you for contacting us, " + name + "!";
+        document.getElementById('form-message').classList.remove('hidden');
+        document.getElementById('contact-form').reset(); // Reset the form
+    } else {
+        alert("Please fill out all fields.");
+    }
+});

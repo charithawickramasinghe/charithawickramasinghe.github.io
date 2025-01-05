@@ -1,5 +1,5 @@
 body {
-    background-color: #131212;
+    background-color: black;
     /* Set background to black */
     color: #fff;
     /* Set text color to white for contrast */
@@ -453,4 +453,62 @@ a.page_button.page_solid_button:hover {
     border-color: #ffffff;
     color: #ffffff;
     background: rgba(229, 126, 98, 0);
+}
+
+/*contact-form*/
+.contact-form-container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    border-color: #ffffff;
+    padding: 19px 60px 17px 60px;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: background 400ms, border 400ms;
+    border-radius: 7px;
+    text-decoration: none;
+    width: auto; /* Adjusts to content size */
+    display: inline-block; /* Prevents block stretching */
+}
+
+form button:hover {
+    background: #e57e62;
+    border-color: #e57e62;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+    color: green;
+    text-align: center;
+    margin-top: 10px;
 }

@@ -40,3 +40,20 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
         alert("Please fill out all fields.");
     }
 });
+
+// test
+
+function filterItems(category) {
+    const items = document.querySelectorAll('.gallery-item');
+    if (category === 'all') {
+      items.forEach(item => item.classList.add('show'));
+    } else {
+      items.forEach(item => {
+        if (item.classList.contains(category)) {
+          item.classList.add('show');
+        } else {
+          item.classList.remove('show');
+        }
+      });
+    }
+  }

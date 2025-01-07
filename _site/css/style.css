@@ -471,7 +471,9 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
@@ -479,7 +481,8 @@ form input, form textarea, form button {
     border-radius: 4px;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     outline: none;
     border-color: #007BFF;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -496,8 +499,10 @@ form button {
     transition: background 400ms, border 400ms;
     border-radius: 7px;
     text-decoration: none;
-    width: auto; /* Adjusts to content size */
-    display: inline-block; /* Prevents block stretching */
+    width: auto;
+    /* Adjusts to content size */
+    display: inline-block;
+    /* Prevents block stretching */
 }
 
 form button:hover {
@@ -512,3 +517,43 @@ form button:hover {
     text-align: center;
     margin-top: 10px;
 }
+
+/* test */
+
+.filter-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .filter-btn:hover {
+    background-color: #0b7dda;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between items */
+    justify-content: center;
+  }
+
+  .gallery-item {
+    display: none; /* Hidden by default */
+    flex: 1 1 calc(33.33% - 15px); /* Responsive width, 3 items per row */
+    background-color: #0b7dda;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  /* Show items */
+  .gallery-item.show {
+    display: block; /* Show filtered items */
+  }

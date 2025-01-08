@@ -1,8 +1,6 @@
 body {
     background-color: black;
-    /* Set background to black */
     color: #fff;
-    /* Set text color to white for contrast */
 }
 
 .bd-placeholder-img {
@@ -484,11 +482,12 @@ form button {
 form input:focus,
 form textarea:focus {
     outline: none;
-    border-color: #007BFF;
+    border-color: #646667;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 form button {
+    background-color: transparent;
     border-color: #ffffff;
     padding: 19px 60px 17px 60px;
     font-size: 13px;
@@ -499,10 +498,8 @@ form button {
     transition: background 400ms, border 400ms;
     border-radius: 7px;
     text-decoration: none;
-    width: auto;
-    /* Adjusts to content size */
-    display: inline-block;
-    /* Prevents block stretching */
+    width: auto; /* Adjusts to content size */
+    display: inline-block; /* Prevents block stretching */
 }
 
 form button:hover {
@@ -524,7 +521,7 @@ form button:hover {
     margin: 5px;
     padding: 10px 20px;
     background-color: transparent;
-    color: #ffffff;
+    color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -560,4 +557,8 @@ form button:hover {
 
   .gallery-item h5 {
     margin-top: 5px;
+    color: rgb(221, 221, 221);
+  }
+  .page_meta{
+    color: rgb(221, 221, 221);
   }

@@ -8,8 +8,8 @@ title: GALLARIES
     <div class="row">
         <div class="col-md-8 mx-auto text-center">
             <button class="filter-btn" onclick="filterItems('all')">All</button>
-            <button class="filter-btn" onclick="filterItems('food')">Food</button>
-            <button class="filter-btn" onclick="filterItems('nature')">Nature</button>
+            <button class="filter-btn" onclick="filterItems('portraits')">Portraits</button>
+            <button class="filter-btn" onclick="filterItems('food')">Food+Drink</button>
             <button class="filter-btn" onclick="filterItems('art')">Art</button>
         </div>
     </div>
@@ -19,15 +19,23 @@ title: GALLARIES
         <div class="col-md-8 mx-auto">
             <div class="gallery">
 
-                <div class="gallery-item food show">
-                    <a href="blog_single-standart.html" class="page_fimage page_image_fader text-left">
+                <div class="gallery-item portraits show">
+                    <a class="page_fimage page_image_fader text-left lightboxgallery-gallery-item" data-album="album1" href="#">
+                        <img src="img/galleries-portraits-rose/cover.jpg" alt="">
+                    </a>
+                    <h5 class="innertitle entry-title">Rose's Privet Session</h5>
+                    <div class="page_meta">
+                        <div>Jul 20, 2022</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item portraits show">
+                    <a class="page_fimage page_image_fader text-left lightboxgallery-gallery-item" data-album="album1" href="#">
                         <img src="img/related_post01.jpg" alt="">
                     </a>
-                    <h4 class="innertitle entry-title">Food Session 1</h4>
+                    <h5 class="innertitle entry-title">Food Session 1</h5>
                     <div class="page_meta">
                         <div>Sep 24, 2017</div>
-                        <div>by pixel-mafia</div>
-                        <div>in Portraits</div>
                     </div>
                 </div>
 
@@ -35,35 +43,19 @@ title: GALLARIES
                     <a href="blog_single-standart.html" class="page_fimage page_image_fader text-left">
                         <img src="img/related_post01.jpg" alt="">
                     </a>
-                    <h4 class="innertitle entry-title">Food Session 1</h4>
+                    <h5 class="innertitle entry-title">Nature Session 1</h5>
                     <div class="page_meta">
                         <div>Sep 24, 2017</div>
-                        <div>by pixel-mafia</div>
-                        <div>in Portraits</div>
                     </div>
                 </div>
 
-                <div class="gallery-item nature show">
+                <div class="gallery-item food show">
                     <a href="blog_single-standart.html" class="page_fimage page_image_fader text-left">
                         <img src="img/related_post01.jpg" alt="">
                     </a>
-                    <h4 class="innertitle entry-title">Nature Session 1</h4>
+                    <h5 class="innertitle entry-title">Nature Session 1</h5>
                     <div class="page_meta">
                         <div>Sep 24, 2017</div>
-                        <div>by pixel-mafia</div>
-                        <div>in Portraits</div>
-                    </div>
-                </div>
-
-                <div class="gallery-item nature show">
-                    <a href="blog_single-standart.html" class="page_fimage page_image_fader text-left">
-                        <img src="img/related_post01.jpg" alt="">
-                    </a>
-                    <h4 class="innertitle entry-title">Nature Session 1</h4>
-                    <div class="page_meta">
-                        <div>Sep 24, 2017</div>
-                        <div>by pixel-mafia</div>
-                        <div>in Portraits</div>
                     </div>
                 </div>
 
@@ -71,11 +63,9 @@ title: GALLARIES
                     <a href="blog_single-standart.html" class="page_fimage page_image_fader text-left">
                         <img src="img/related_post01.jpg" alt="">
                     </a>
-                    <h4 class="innertitle entry-title">Art Session 1</h4>
+                    <h5 class="innertitle entry-title">Art Session 1</h5>
                     <div class="page_meta">
                         <div>Sep 24, 2017</div>
-                        <div>by pixel-mafia</div>
-                        <div>in Portraits</div>
                     </div>
                 </div>
 
@@ -83,15 +73,26 @@ title: GALLARIES
                     <a href="blog_single-standart.html" class="page_fimage page_image_fader text-left">
                         <img src="img/related_post01.jpg" alt="">
                     </a>
-                    <h4 class="innertitle entry-title">Art Session 1</h4>
+                    <h5 class="innertitle entry-title">Art Session 1</h5>
                     <div class="page_meta">
                         <div>Sep 24, 2017</div>
-                        <div>by pixel-mafia</div>
-                        <div>in Portraits</div>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+    <!-- Lightbox Modal -->
+  <div class="lightboxgallery-modal-wrapper lightboxgallery-hidden" id="lightbox">
+    <div class="lightboxgallery-modal">
+      <a href="#" class="lightboxgallery-close">×</a>
+      <div class="lightboxgallery-image-wrapper">
+        <img id="lightbox-img" class="lightboxgallery-image" src="" alt="">
+      </div>
+      <a class="lightboxgallery-prev"><span></span></a>
+      <a class="lightboxgallery-next"><span></span></a>
+    </div>
+  </div>
+
 </div>

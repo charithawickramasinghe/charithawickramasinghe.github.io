@@ -158,6 +158,10 @@ ul li {
     justify-content: flex-end;
 }
 
+/* Footer Container */
+.footer-container{
+    color: rgb(221, 221, 221);
+}
 .social-links-footer ul {
     list-style: none;
     /* Remove bullets */

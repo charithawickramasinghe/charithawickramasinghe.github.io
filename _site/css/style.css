@@ -455,12 +455,7 @@ a.page_button.page_solid_button:hover {
 
 /*contact-form*/
 .contact-form-container {
-    background: white;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
+    color: rgb(221, 221, 221);
 }
 
 form label {
@@ -498,8 +493,10 @@ form button {
     transition: background 400ms, border 400ms;
     border-radius: 7px;
     text-decoration: none;
-    width: auto; /* Adjusts to content size */
-    display: inline-block; /* Prevents block stretching */
+    width: auto;
+    /* Adjusts to content size */
+    display: inline-block;
+    /* Prevents block stretching */
 }
 
 form button:hover {
@@ -517,7 +514,7 @@ form button:hover {
 
 /* Gallaries with filter */
 .filter-btn {
-    font-family:'Montserrat';
+    font-family: 'Montserrat';
     margin: 5px;
     padding: 10px 20px;
     background-color: transparent;
@@ -525,40 +522,45 @@ form button:hover {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    text-transform:uppercase;
-  }
+    text-transform: uppercase;
+}
 
-  .filter-btn:hover {
+.filter-btn:hover {
     color: #e57e62;
-  }
+}
 
-  .gallery {
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Space between items */
+    gap: 15px;
+    /* Space between items */
     justify-content: center;
-  }
+}
 
-  .gallery-item {
-    display: none; /* Hidden by default */
-    flex: 1 1 calc(33.33% - 15px); /* Responsive width, 3 items per row */
+.gallery-item {
+    display: none;
+    /* Hidden by default */
+    flex: 1 1 calc(33.33% - 15px);
+    /* Responsive width, 3 items per row */
     background-color: transparent;
-  }
+}
 
-  .gallery-item img {
+.gallery-item img {
     width: 100%;
     height: auto;
-  }
+}
 
-  /* Show items */
-  .gallery-item.show {
-    display: block; /* Show filtered items */
-  }
+/* Show items */
+.gallery-item.show {
+    display: block;
+    /* Show filtered items */
+}
 
-  .gallery-item h5 {
+.gallery-item h5 {
     margin-top: 5px;
     color: rgb(221, 221, 221);
-  }
-  .page_meta{
+}
+
+.page_meta {
     color: rgb(221, 221, 221);
-  }
+}

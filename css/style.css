@@ -662,3 +662,31 @@ form button:hover {
     color: #e57e62;
 }
 
+.about-section {
+
+    margin: 0;
+    padding: 0;
+}
+
+.about-section .subtitle {
+    display: block; /* Ensure it's on its own line */
+    font-size: 14px; /* Smaller font size */
+    color: gray; /* Gray color for the subtitle */
+    margin: 0;
+    line-height: 1; /* Default line height */
+    position: relative;
+    bottom: -40px; /* Negative positioning to overlap */
+    text-transform: uppercase; /* Make text uppercase */
+font-weight: bold;
+    
+}
+
+.about-section .title {
+    font-size: 35px; /* Larger font size for the title */
+    color: white; /* Black color for the title */
+    margin: 0;
+    line-height: 1; /* Default line height */
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+
